@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var Money: TextView
     lateinit var Money1: Button
     var money = 0
-    var ovosh = 10000000000000
+    var ovosh = 1
 
 
 
@@ -18,11 +18,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Money = findViewById(R.id.textView)
-        Money1 = findViewById(R.id.button)
+        Money1 = findViewById<Button>(R.id.button)
 
         Money1.setOnClickListener{
             money +=ovosh
             Money.text = "рубль $money"
+            if (money > 9)
+                Money.text = "рубля $money"
         }
 
 
