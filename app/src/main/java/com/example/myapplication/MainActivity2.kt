@@ -11,7 +11,7 @@ class MainActivity2 : AppCompatActivity() {
     var money1 = 0
     var ovosh1 = 1
 
-class MainActivity2 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -19,11 +19,11 @@ class MainActivity2 : AppCompatActivity() {
         Money2 = findViewById< TextView>(R.id.textView)
         Money3 = findViewById<Button>(R.id.button)
 
-        Money1.setOnClickListener{
-            money +=ovosh
-            Money.text = "доллор $money2"
-            if (money > 9)
-                Money.text = "доллора $money1"
+        Money3.setOnClickListener{
+            money1 +=ovosh1
+            Money2.text = "доллор $money1"
+            if (money1 > 9)
+                Money2.text = "доллора $money1"
         }
 
     }

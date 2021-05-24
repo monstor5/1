@@ -35,4 +35,14 @@
         app:layout_constraintVertical_bias="0.503"
         tools:ignore="MissingConstraints" />
 
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="157dp"
+        android:layout_height="80dp"
+        android:text="анти клик"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
